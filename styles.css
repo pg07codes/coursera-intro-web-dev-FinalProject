@@ -1,0 +1,117 @@
+
+/* direct tag names used below to reference HTML elements for styling */
+body{
+    margin:0;
+    padding:0;
+    background-color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h3{
+    padding: 10px;
+    margin: 5px auto;
+    width:800px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+tr:nth-child(even){
+    background-color: beige;
+}
+
+/* #(ID) or .(class) used below to reference HTML element for styling */
+#heading{
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 10px auto;
+    width:800px;
+}
+
+#bannerDiv{
+    padding: 20px;
+    margin: 10px auto;
+    width:600px;
+}
+
+#banner{
+    margin: 10px 50px;
+    border-color: blueviolet;
+    width: 80%;
+
+
+}
+
+
+.benifitsTable{
+    border:"2";
+    padding: 15px;
+    margin: 5px auto;
+    width:600px;
+}
+
+
+.aimVision{
+    padding: 10px;
+    margin: 10px auto;
+    width:600px;
+    font-weight: bold;
+}
+
+.mainRow{
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+#myform{
+    width:600px;
+    margin:25px auto;
+    border: 5px dashed beige;
+    padding: 20px;
+}
+
+.mylabel{
+    font-weight: bold;
+    color: cadetblue;
+    padding:3px 5px;
+    margin:3px 10px;
+    display: inline-block;
+    width:150px;
+}
+
+.myinput{
+    border: 2px solid black;
+    padding: 5px;
+    margin:5px auto;
+}
+
+.feedback{
+    padding:5px 10px;
+    margin: 2px 10px;
+    color: burlywood;
+}
+
+#previewFormData{
+    width:600px;
+    padding: 20px;
+    margin:20px auto;
+    border:3px dashed lightcoral;
+}
+
+#endingDiv{
+    padding: 20px;
+    margin: 10px auto;
+    width:600px;
+}
+
+#endBanner{
+    margin: 10px 50px;
+    border-color: blueviolet;
+    width: 80%;
+    border-radius: 10%;
+}

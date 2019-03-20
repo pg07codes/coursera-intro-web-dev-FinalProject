@@ -1,0 +1,9 @@
+This project contains three files in total
+- index.html (main HTML source file)
+- javascriptFunctions.js (for form validation and dynamic behaviour)
+- styles.css (for custom styling of contents on webpage)
+- documentation.txt (which you are reading right now:)
+
+# all of the parameters are strictly followed and each and every detail 
+# given in instructions for Final Project is adhered to. From Comments to JS validations.Everything. 
+# CHEERS.

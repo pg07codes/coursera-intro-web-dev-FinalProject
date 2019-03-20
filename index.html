@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    
+    <!-- title of the webpage along with one CSS stylesheet 
+    and one javascript file (added at last so that page can get loaded before using HTML references)
+     for validation and other dynamic activity(both included externally) -->
+    
+    <title>Finale Project</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+
+</head>
+
+<body>
+
+    <h1 id="heading">SIGN UP TO OUR WEBSITE FOR UPDATES !!</h1>
+    <div id="bannerDiv">
+        <img id="banner" src="https://cdn.pixabay.com/photo/2016/12/21/05/01/sign-up-1922238_960_720.png" alt="Sign Up Image">
+    </div>
+
+    <h3>
+        Purpose of this Form 
+    </h3>
+
+    <p class="aimVision">
+        It is my final project for this course. It was an amazing course and 
+        i enjoyed it. I hope you enjoyed it too. This form is a SIGNUP form 
+        for an article/blogging website and all necessary details are asked and validated also.
+        Preview of entered details is also an option. 
+        <br>
+        HAVE A CHEERFUL DAY AHEAD. THANKS FOR VISITING MY SITE.
+    </p>
+
+    <h3>Benifits of signing up </h3>
+
+    <!-- TABLE FOR SOME DETAILS IS MADE HERE -->
+
+    <table class="benifitsTable">
+        <tr class="mainRow">
+            <td>Features</td>
+            <td>For new user</td>
+            <td>For signed up user</td>
+        </tr>
+        <tr>
+            <td>Read Articles</td>
+            <td>Yes</td>
+            <td>Yes</td>
+
+        </tr>
+        <tr>
+            <td>Regular Recommendations</td>
+            <td>No</td>
+            <td>Yes</td>
+
+        </tr>
+        <tr>
+            <td>Discount Offers</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Submit/Bookmark your articles</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+
+    <h3>
+        Our Aim as a blog site 
+    </h3>
+
+    <p class="aimVision">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u
+        t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la
+        boris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
+        tate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occa
+        ecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <h3>
+        Our Vision 
+    </h3>
+
+    <p class="aimVision">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u
+            t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco la
+            boris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
+            tate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occa
+            ecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <h3>
+        Sign Up here !!
+    </h3>
+
+    <!-- MAIN FORM IS DOWN HERE -->
+
+    <form id="myform" action="#">
+        <span class="mylabel">First Name</span>
+        <input onblur="validateFName()" class="myinput" type="text" maxlength="10" id="firstname" placeholder=" between 3-10 letters" required>
+        <span class="feedback" id="feedbfname"></span>
+        <br>
+        <span class="mylabel" >Last Name</span>
+        <input onblur="validateLName()" class="myinput" type="text" maxlength="15" id="lastname" placeholder=" between 5-15 letters">
+        <span class="feedback" id="feedblname"></span>
+        <br>
+        <span class="mylabel" >DateOfBirth</span>
+        <input onblur="validDate()" class="myinput" type="date" id="date">
+        <span class="feedback" id="feedbdate"></span>
+        <br>
+        <span class="mylabel" >Email Address</span>
+        <input pattern="^\S+@\S+\.\S+$" onblur="validateEmailAndType()" class="myinput" type="email" id="email" placeholder=" valid email address" required >
+        <span class="feedback" id="feedbemail">validated by pattern + JS</span>
+        <br>
+        <span class="mylabel" >Password</span>
+        <input onblur="validatePassword()" class="myinput" type="password" id="password" maxlength="16" placeholder=" between 8-16 characters" required>
+        <span class="feedback" id="feedbpassword"></span>
+        <br>
+        <span class="mylabel" >Phone Number</span>
+        <input onblur="validatePhone()" class="myinput" type="number" id="phone" placeholder="10 digit phone number">
+        <span class="feedback" id="feedbphone"></span>
+        <br>
+        <span class="mylabel" >Options</span> <br>
+        <input class="myinput" type="checkbox" name="options" value="turn_on_suggestions"> Turn on Suggestions <br>      
+        <input class="myinput" type="checkbox" name="options" value="mail_me_offers"> Mail me about new Offers <br>
+        <input class="myinput" type="checkbox" name="options" value="remember_password"> Remember my Password <br>
+
+        <br>
+        <span class="mylabel" >Account Type</span> <br>
+        <input class="myinput Atype" type="radio" name="type" id="private" value="private" checked> Private Account <br>
+        <input class="myinput Atype" type="radio" name="type" id="public" value="public"> Public Account <br>
+
+        <br>
+
+        <span class="mylabel" >userID(ReadOnly)</span>
+        <input class="myinput" type="text" name="id" value="id-1023-uid88" readonly>
+
+        <br>
+
+        <input type="button" onclick="areAllValid()" value="Preview Details" id="previewbtn">
+
+
+
+    </form>
+
+    <!-- PREVIEW OF FORM AVAILABLE HERE -->
+
+    <div id="previewFormData">
+        <h4>preview will be available here once Form is filled correctly.</h4>
+    </div>
+
+
+    <div id="endingDiv">
+            <img id="endBanner" src="https://images.pexels.com/photos/791024/pexels-photo-791024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Thanks Image">
+        </div>
+
+    
+    <script src="javascriptFunctions.js" type="text/javascript"></script>
+    <!-- javascript is added at last to increase performance, and also so that HTML can be parsed
+        before referencing it in js  -->
+</body>
+
+</html>
